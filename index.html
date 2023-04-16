@@ -28,11 +28,11 @@
     <main class="main-content">
         <section class="filter-section">
             <div class="container filter-section-container">
-                <form class="filter-form" action="https://echo.htmlacademy.ru">
-                    <input type="search" name="search" class="search-input" placeholder="Search for a country…">
+                <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+                    <input type="search" name="search" class="search-input" placeholder="Search for a country…" aria-label="Country name">
                 </form>
                 <div class="custom-select">
-                    <select id="slct" required>
+                    <select class="select" required>
                         <option value="" disabled selected>Filter by Region</option>
                         <option value="1">Africa</option>
                         <option value="2">America</option>
