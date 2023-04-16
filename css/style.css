@@ -1,3 +1,8 @@
+:root{
+    --body-bg: #fafafa;
+    --text-color: #111517;
+    --element-bg: #ffffff;
+}
 html{
     box-sizing: border-box;
     height: 100%;
@@ -11,14 +16,15 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    color: #111517;
-    background-color: #fafafa;
+    color: var(--text-color);
+    background-color: var(--body-bg);
     padding: 0;
     margin: 0;
     font-family: 'Nunito Sans', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 26px;
     font-weight: 800;
+    transition: background-color .4s ease;
 }
 .container{
     width: 100%;
@@ -27,6 +33,9 @@ body{
     padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+a{
+    text-decoration: none;
 }
 img{
     max-width: 100%;
@@ -37,10 +46,11 @@ img{
 }
 
 .site-header{
-    background: #fff;
+    background: var(--element-bg);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
     margin-top: 0;
     margin-bottom: 68px;
+    white-space: nowrap;
 }
 .site-header-container{
     display: flex;
@@ -51,19 +61,31 @@ img{
     font-style: 24px;
     line-height: normal;
 }
+.site-header-heading a{
+    color: var(--text-color);
+}
+.site-header-heading:hover{
+    opacity: 0.8;
+}
+.site-header-heading:active{
+    opacity: 0.6;
+}
 .site-modes{
     display: flex;
     align-items: center;
     cursor: pointer;        
+}
+.site-modes:hover{
+    opacity: 0.8;
+}
+.site-modes:active{
+    opacity: 0.6;
 }
 .site-modes-text{
     font-weight: 600;
     font-size: 16px;
     line-height: normal;
     margin-left: 8px;
-}
-.dark-mode-icon{
-    color: #fff;
 }
 .filter-section{
     margin-top: 0;
@@ -106,7 +128,7 @@ img{
     flex-wrap: wrap;
 }
 .countries-box{
-    background-color: #fff;
+    background-color: var(--element-bg);
     width: 264px;
     border-radius: 5px;
     box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
@@ -144,4 +166,9 @@ img{
 }
 .countries-text{
     font-weight: 400;
+}
+.dark-mode{
+    --body-bg: #202C36;
+    --text-color: #ffffff;
+    --element-bg: #2b3844;
 }
