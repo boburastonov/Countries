@@ -162,6 +162,9 @@ img{
     line-height: 26px;
     font-weight: 800;
 }
+.countries-name .countries-link{
+    color: var(--text-color);
+}
 .countries-info{
     margin-top: 0;
     margin-left: 24px;
